@@ -18,5 +18,12 @@ public class Main {
         System.out.println("Minimum number in the array = " + ubung2.minimum(arrayOfNumbers));
         System.out.println("Maximum n-1 numbers sum in the array = " + ubung2.maxSum(arrayOfNumbers));
         System.out.println("Minimum n-1 numbers sum in the array = " + ubung2.minSum(arrayOfNumbers));
+        System.out.println("-".repeat(30));
+
+        //Ubung 3
+        Ubung3 ubung3 = new Ubung3();
+        int[] firstArray = {3, 4, 5, 1, 0, 0, 0, 5};
+        int[] secondArray = {5, 7, 6, 9, 0, 2, 0, 9};
+        System.out.println("Sum = " + Arrays.toString(ubung3.addition(firstArray, secondArray)));
     }
 }
