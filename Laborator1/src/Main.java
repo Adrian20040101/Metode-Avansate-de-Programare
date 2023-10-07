@@ -9,7 +9,7 @@ public class Main {
         System.out.println("Average grade = " + notenProzessor.averageGrade(noten));
         System.out.println("All rounded grades = " + Arrays.toString(notenProzessor.roundedGrades(noten)));
         System.out.println("Maximum rounded grade = " + notenProzessor.maxRoundedGrade(noten));
-        System.out.println("-".repeat(30));
+        System.out.println("-".repeat(69));
 
         //Ubung 2
         Ubung2 ubung2 = new Ubung2();
@@ -18,7 +18,7 @@ public class Main {
         System.out.println("Minimum number in the array = " + ubung2.minimum(arrayOfNumbers));
         System.out.println("Maximum n-1 numbers sum in the array = " + ubung2.maxSum(arrayOfNumbers));
         System.out.println("Minimum n-1 numbers sum in the array = " + ubung2.minSum(arrayOfNumbers));
-        System.out.println("-".repeat(30));
+        System.out.println("-".repeat(69));
 
         //Ubung 3
         Ubung3 ubung3 = new Ubung3();
@@ -31,5 +31,18 @@ public class Main {
                 Arrays.toString(ubung3.multiplication(secondArray, factor)));
         System.out.println("Division with " + factor + " = " +
                 Arrays.toString(ubung3.division(firstArray, factor)));
+        System.out.println("-".repeat(69));
+
+        //Ubung 4
+        Ubung4 ubung4 = new Ubung4();
+        int[] usbCablePrices = {15, 20, 18, 37, 50, 12};
+        int[] keyboardPrices = {30, 25, 45, 75, 100, 60};
+        System.out.println("Cheapest keyboard costs " + ubung4.cheapestKeyboard(keyboardPrices) + " lei");
+        System.out.println("Most expensive item (USB cable/keyboard) costs " +
+                ubung4.mostExpensiveItem(usbCablePrices, keyboardPrices) + " lei");
+        System.out.println("Most expensive USB cable that Markus can afford costs " +
+                ubung4.mostExpensiveUSBCable(usbCablePrices, 40) + " lei");
+        System.out.println("Total amount spent = " + ubung4.buyTwoItems(usbCablePrices, keyboardPrices, 77) +
+                " lei");
     }
 }
