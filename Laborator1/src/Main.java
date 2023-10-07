@@ -22,8 +22,14 @@ public class Main {
 
         //Ubung 3
         Ubung3 ubung3 = new Ubung3();
-        int[] firstArray = {3, 4, 5, 1, 0, 0, 0, 5};
-        int[] secondArray = {5, 7, 6, 9, 0, 2, 0, 9};
+        int[] firstArray = {6, 4, 5, 1, 0, 0, 0, 5};
+        int[] secondArray = {2, 7, 6, 9, 0, 2, 0, 9};
+        int factor = 5;
         System.out.println("Sum = " + Arrays.toString(ubung3.addition(firstArray, secondArray)));
+        System.out.println("Difference = " + Arrays.toString(ubung3.subtraction(firstArray, secondArray)));
+        System.out.println("Multiplication with " + factor + " = " +
+                Arrays.toString(ubung3.multiplication(secondArray, factor)));
+        System.out.println("Division with " + factor + " = " +
+                Arrays.toString(ubung3.division(firstArray, factor)));
     }
 }
