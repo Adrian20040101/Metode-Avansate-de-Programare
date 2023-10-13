@@ -1,3 +1,5 @@
+package Ubungen;
+
 import java.util.Arrays;
 
 public class Ubung4 {

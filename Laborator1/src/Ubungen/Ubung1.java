@@ -1,6 +1,9 @@
+package Ubungen;
+
 public class Ubung1 {
     //helper method to round the grades
     public int round(int note){
+        if (note < 0 || note > 100) throw new IllegalArgumentException();
         if (note < 38) return note;
         int nextFiveMultiple = note;
         while (nextFiveMultiple % 5 != 0) nextFiveMultiple++;
@@ -9,6 +12,7 @@ public class Ubung1 {
     }
 
     public int[] nichtAusreichend(int[] noten){
+        if (noten.length == 0) throw new IllegalArgumentException();
         int gradesBelow40 = 0;
         for (var grade : noten){
             if (round(grade) < 40) gradesBelow40++;
@@ -28,7 +32,7 @@ public class Ubung1 {
     public double averageGrade(int[] noten){
         int sum = 0;
         for (var grade : noten){
-            sum += grade;
+            sum += round(grade);
         }
         return (double)sum/noten.length;
     }

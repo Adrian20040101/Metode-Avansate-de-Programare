@@ -1,3 +1,5 @@
+package Ubungen;
+
 public class Ubung2 {
     public int maximum(int[] numbers){
         int maximum = Integer.MIN_VALUE;

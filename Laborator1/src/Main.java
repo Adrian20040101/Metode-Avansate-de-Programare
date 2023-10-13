@@ -1,3 +1,8 @@
+import Ubungen.Ubung1;
+import Ubungen.Ubung2;
+import Ubungen.Ubung3;
+import Ubungen.Ubung4;
+
 import java.util.Arrays;
 
 public class Main {
