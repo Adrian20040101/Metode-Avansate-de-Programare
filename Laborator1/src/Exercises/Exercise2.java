@@ -1,6 +1,6 @@
-package Ubungen;
+package Exercises;
 
-public class Ubung2 {
+public class Exercise2 {
     public int maximum(int[] numbers){
         if (numbers.length == 0) throw new IllegalArgumentException();
         int maximum = Integer.MIN_VALUE;

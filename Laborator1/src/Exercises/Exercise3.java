@@ -1,10 +1,10 @@
-package Ubungen;
+package Exercises;
 
 import java.util.Arrays;
 
 import static java.lang.Math.abs;
 
-public class Ubung3 {
+public class Exercise3 {
     public int[] addition(int[] array1, int[] array2){
         //both arrays passed as arguments must have identical sizes
         if (array1.length == 0 || array2.length == 0 || array1.length != array2.length)

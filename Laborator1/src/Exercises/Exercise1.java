@@ -1,6 +1,6 @@
-package Ubungen;
+package Exercises;
 
-public class Ubung1 {
+public class Exercise1 {
     //helper method to round the grades
     public int round(int note){
         if (note < 0 || note > 100) throw new IllegalArgumentException();
@@ -11,7 +11,7 @@ public class Ubung1 {
         return note;
     }
 
-    public int[] nichtAusreichend(int[] noten){
+    public int[] below40Grades(int[] noten){
         if (noten.length == 0) throw new IllegalArgumentException();
         int gradesBelow40 = 0;
         for (var grade : noten){

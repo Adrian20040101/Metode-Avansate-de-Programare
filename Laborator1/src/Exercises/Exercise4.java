@@ -1,9 +1,10 @@
-package Ubungen;
+package Exercises;
 
 import java.util.Arrays;
 
-public class Ubung4 {
+public class Exercise4 {
     public int cheapestKeyboard(int[] keyboardPrices){
+        if (keyboardPrices.length == 0) throw new IllegalArgumentException();
         int minimum = Integer.MAX_VALUE;
         for (var price : keyboardPrices){
             if (price < minimum) minimum = price;
@@ -12,6 +13,7 @@ public class Ubung4 {
     }
 
     public int mostExpensiveItem(int[] usbCablePrices, int[] keyboardPrices){
+        if (usbCablePrices.length == 0 || keyboardPrices.length == 0) throw new IllegalArgumentException();
         int maximum = Integer.MIN_VALUE;
         for (var price : usbCablePrices){
             if (price > maximum) maximum = price;
@@ -23,6 +25,7 @@ public class Ubung4 {
     }
 
     public int mostExpensiveUSBCable(int[] usbCablePrices, int budget){
+        if (usbCablePrices.length == 0 || budget < 0) throw new IllegalArgumentException();
         int maximum = Integer.MIN_VALUE;
         for (var price : usbCablePrices){
             if (price > maximum && price < budget) maximum = price;
@@ -31,6 +34,7 @@ public class Ubung4 {
     }
 
     public int buyTwoItems(int[] usbCablePrices, int[] keyboardPrices, int budget) {
+        if (usbCablePrices.length == 0 || keyboardPrices.length == 0) throw new IllegalArgumentException();
         Arrays.sort(usbCablePrices);
         Arrays.sort(keyboardPrices);
 
