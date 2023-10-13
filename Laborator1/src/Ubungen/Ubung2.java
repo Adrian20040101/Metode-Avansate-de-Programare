@@ -2,6 +2,7 @@ package Ubungen;
 
 public class Ubung2 {
     public int maximum(int[] numbers){
+        if (numbers.length == 0) throw new IllegalArgumentException();
         int maximum = Integer.MIN_VALUE;
         for (var number : numbers){
             if (number > maximum) maximum = number;
@@ -10,6 +11,7 @@ public class Ubung2 {
     }
 
     public int minimum(int[] numbers){
+        if (numbers.length == 0) throw new IllegalArgumentException();
         int minimum = Integer.MAX_VALUE;
         for (var number : numbers){
             if (number < minimum) minimum = number;
@@ -19,6 +21,7 @@ public class Ubung2 {
 
     //max sum of n - 1 numbers from the array
     public int maxSum(int[] numbers){
+        if (numbers.length == 0) throw new IllegalArgumentException();
         int maxSum = 0;
         for (var number : numbers){
             if (number != minimum(numbers)){
@@ -30,6 +33,7 @@ public class Ubung2 {
 
     //min sum of n - 1 numbers from the array
     public int minSum(int[] numbers){
+        if (numbers.length == 0) throw new IllegalArgumentException();
         int minSum = 0;
         for (var number : numbers){
             if (number != maximum(numbers)){

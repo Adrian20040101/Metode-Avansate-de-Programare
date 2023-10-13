@@ -23,8 +23,7 @@ public class Ubung1Test {
 
     @Test
     public void nichtAusreichendNotenTest(){
-        int[] expectedResult = {32, 21, 34};
-        assertArrayEquals(expectedResult, ubung1.nichtAusreichend(notenValues));
+        assertArrayEquals(new int[]{32, 21, 34}, ubung1.nichtAusreichend(notenValues));
     }
 
     @Test

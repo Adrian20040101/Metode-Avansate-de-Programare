@@ -29,7 +29,7 @@ public class Main {
         Ubung3 ubung3 = new Ubung3();
         int[] firstArray = {6, 4, 5, 1, 0, 0, 0, 5};
         int[] secondArray = {2, 7, 6, 9, 0, 2, 0, 9};
-        int factor = 5;
+        int factor = -5;
         System.out.println("Sum = " + Arrays.toString(ubung3.addition(firstArray, secondArray)));
         System.out.println("Difference = " + Arrays.toString(ubung3.subtraction(firstArray, secondArray)));
         System.out.println("Multiplication with " + factor + " = " +
