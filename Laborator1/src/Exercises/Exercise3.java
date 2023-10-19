@@ -14,6 +14,7 @@ public class Exercise3 {
 
         boolean carry = false;
         for(int i = array1.length - 1; i >= 0; i--){
+            //here we assign the value of the addition with or without carry using the ternary operator
             int digitSum = array1[i] + array2[i] + (carry ? 1 : 0);
 
             if (digitSum > 9) {
@@ -24,10 +25,15 @@ public class Exercise3 {
                 carry = false;
             }
         }
+        //if the sum of the two numbers exceed the positions that were originally allocated, add a one at the beginning to keep track of the carry
         if (carry) sum[0] = 1;
+        //if there was a carry, return the whole array, else return only the relevant part, leaving the first position out
         return carry ? sum : Arrays.copyOfRange(sum, 1, sum.length);
     }
 
+    /*in the subtraction we have to also keep in mind the possibility that the result is a negative number
+    * that case is handled separately in the below code. The overall logic of the operations executed is
+    * similar to the one used in the addition method*/
     public int[] subtraction(int[] array1, int[] array2) {
         if (array1.length == 0 || array2.length == 0 || array1.length != array2.length)
             throw new IllegalArgumentException();
@@ -79,7 +85,7 @@ public class Exercise3 {
             carry = digitMultiplication / 10;
         }
         if (carry > 0) result[0] = -carry; //setting the minus sign before the number
-        else result[1] *= -1;  //if there is no carry, set the minus to the left most bit
+        else result[1] *= -1;  //if there is no carry, set the minus to the left most digit
         return carry > 0 ? result : Arrays.copyOfRange(result, 1, result.length);
     }
 

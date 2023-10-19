@@ -40,8 +40,9 @@ public class Exercise4 {
 
         int maxTotal = 0;
 
-        if (keyboardPrices[0] > budget || usbCablePrices[0] > budget) return -1; //that means he is not able to buy both items
+        if (keyboardPrices[0] > budget || usbCablePrices[0] > budget) return -1; //that means the customer is not able to buy both items
 
+        //in this nested for loop block we calculate the two most expensive items that the customer can buy, prioritizing a more expensive keyboard if possible
         for (int i = keyboardPrices.length - 1; i >= 0; i--) {
             for (int j = usbCablePrices.length - 1; j >= 0; j--) {
                 int total = keyboardPrices[i] + usbCablePrices[j];

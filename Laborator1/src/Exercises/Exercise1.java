@@ -11,6 +11,7 @@ public class Exercise1 {
         return note;
     }
 
+    // this method checks if the rounded grade is below 40 and places it into an intermediary array, which is returned
     public int[] below40Grades(int[] noten){
         if (noten.length == 0) throw new IllegalArgumentException();
         int gradesBelow40 = 0;
@@ -29,6 +30,7 @@ public class Exercise1 {
         return intermediaryArray;
     }
 
+    //this method performs the average of the rounded grades
     public double averageGrade(int[] noten){
         int sum = 0;
         for (var grade : noten){
@@ -37,6 +39,7 @@ public class Exercise1 {
         return (double)sum/noten.length;
     }
 
+    //this method returns the rounded grades
     public int[] roundedGrades(int[] noten){
         int[] roundedGrades = new int[noten.length];
         for(int i = 0; i < noten.length; i++){
