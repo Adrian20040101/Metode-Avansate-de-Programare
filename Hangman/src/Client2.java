@@ -23,7 +23,7 @@ public class Client2 {
     }
 
     public static void main(String[] args) {
-        try (Socket socket = new Socket("127.0.0.1", 8888);
+        try (Socket socket = new Socket("192.168.214.204", 8888);
              BufferedReader reader = new BufferedReader(new InputStreamReader(socket.getInputStream()));
              PrintWriter writer = new PrintWriter(socket.getOutputStream(), true)) {
 
