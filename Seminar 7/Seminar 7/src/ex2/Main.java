@@ -8,5 +8,6 @@ public class Main {
         Statistics statistics = new Statistics(numberList);
         System.out.println("Max = " + statistics.computeMax());
         System.out.println("Sum = " + statistics.computeSum());
+
     }
 }
